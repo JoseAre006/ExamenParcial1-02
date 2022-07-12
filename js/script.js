@@ -25,7 +25,15 @@
            Deberás convertir el string a Entero. 
     
     */
-
+      document.getElementById("btn_añoshumano").addEventListener("click", function(event){
+        event.preventDefault()
+      });
+      function calculateDogAge(){
+      let EdadHumano = document.getElementById('edad_humano').value;
+      parseInt = EdadHumano;
+      let EdadPerro = EdadHumano * 7;
+      document.getElementById("edad_perro").innerHTML=EdadPerro;
+      }
 
 
       /*  OBJETOS 
@@ -45,3 +53,18 @@
        Registra un evento de "click", para que cuando se de click en el botón, se muestren las propiedades de cada objeto en el input correspondiente. 
 
      */
+      let muestra = document.getElementById("btn_muestra");
+      muestra = addEventListener("click", Registro)
+       class Pokemon{
+        constructor(Características){
+          this.Nombre = Características.Nombre;
+          this.Especie = Características.Especie;
+          this.Ataque = Características.Ataque;
+          this.Defensa = Características.Defensa;
+        }
+       }
+       let muestra = document.getElementById("btn_muestra");
+       muestra = addEventListener("click", Registro)
+       function Registro{
+        
+       }
